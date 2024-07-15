@@ -1,0 +1,200 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, rgb(245, 107, 107), rgb(143, 143, 235));
+    font-family: cursive;
+}
+
+.game-beginning {
+    position: relative;
+    margin-top: 30vh;
+    text-align: center; 
+}
+
+.gestures {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gesture,
+.gesture1 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    transition: all 400ms;
+}
+
+.gesture1:hover,
+.gesture1:focus {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#rockDiv,
+#rockDiv1 {
+    background-image: url("Images/Rock-img-2.webp");
+}
+
+#papperDiv,
+#papperDiv1 {
+    background-image: url("Images/Papper-img.jpg");
+}
+
+#scissorsDiv,
+#scissorsDiv1 {
+    background-image: url("Images/Scissors-img.jpg");
+}
+
+.play-div {
+    margin-top: 6em;
+    display: block;
+    text-align: center;
+}
+
+#playBtn {
+    padding: 1em 2em;
+    font-weight: 600;
+    font-size: 20px;
+    border: 1px solid black;
+    background-color: rgb(131, 245, 121);
+    border-radius: 5px;
+    transition: all 400ms;
+}
+
+#playBtn:hover,
+#playBtn:focus {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.pick-gesture {
+    display: none;
+}
+
+.pick-a-gesture {
+    margin-top: 4em;
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 2em;
+} 
+
+.all-gesture {
+    display: flex;
+    align-items: center;
+}
+
+#counter {
+    display: none;
+    font-size: 120px;
+    color: white;
+    position: relative;
+    margin-top: 36vh;
+    text-align: center; 
+}
+
+.battle {
+    display: none;
+    color: white;
+}
+
+.PC-side { 
+    display: block;
+    text-align: center;
+    flex: 1;
+}
+
+.player-side {
+    display: block;
+    text-align: center;
+    flex: 1;
+}
+
+#PCresult,
+#playerResult {
+    font-size: 30px;
+}
+
+/*.battle-divider {
+    height: 100vh;
+    width: 3px; 
+    background-color: black;
+}*/
+
+.player {
+    font-size: 40px;
+}
+
+.centerGesture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15em;
+}
+
+#gestureByPlayer,
+#gestureByPC {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 200px;
+    width: 250px;
+    height: 250px;
+    transition: all 400ms;
+}
+
+.resultText {
+    margin-top: 8em;
+    font-size: 30px;
+}
+
+#displayingResult {
+    display: block;
+    text-align: center;
+    margin-top: 11em;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.declaring-winner {
+    margin-top: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.winner-text {
+    color: white;
+    font-size: 40px;
+}
+
+#winner {
+    font-size: 40px;
+    color: greenyellow;
+    font-weight: 800;
+    display: block;
+    text-align: center;
+}
+
+#rematch {
+    margin-top: 2em;
+    border-radius: 100px;
+    padding: 1em 2em;
+    border: 1px solid black;
+    background-color: rgb(11, 202, 11);
+    color: white;
+    transition: all 200ms;
+}
+
+#rematch:hover,
+#rematch:focus {
+    transform: scale(1.1);
+    cursor: pointer;
+}

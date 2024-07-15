@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Rock Papper Scissors</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link type = "text/css" rel = "stylesheet" href = "Rock Papper Scissors.css">
+    </head>
+
+    <body>
+        
+        <div id = "beginningOfTheGame" class = "game-beginning">
+
+            <div class = "gestures">
+
+                <div id = "rockDiv" class = "gesture"></div>
+                <div id = "papperDiv" class = "gesture"></div>
+                <div id = "scissorsDiv"  class = "gesture"></div>
+            </div>
+
+            <div class = "play-div">
+                <button id = "playBtn">Play</button>
+            </div>
+        </div>
+
+        <div class = "pick-gesture">
+            <h2 class = "pick-a-gesture">Pick a gesture:</h2>
+
+            <div class = "gestures all-gestures">
+
+                <div id = "rockDiv1" class = "gesture1"></div>
+                <div id = "papperDiv1" class = "gesture1"></div>
+                <div id = "scissorsDiv1" class = "gesture1"></div>
+            </div>
+        </div>
+
+        <h2 id = "counter">3</h2>
+
+        <div class = "battle">
+            <div class = "PC-side">
+                <h2 class = "player">Computer</h2>
+
+                <div class = "centerGesture">
+                    <div id = "gestureByPC"></div>
+                </div>
+
+                <p class = "resultText">Result: <br> <label id = "PCresult">0</label></p>
+            </div>
+
+            <div id = "displayingResult"></div>
+
+            <div class = "player-side">
+                <h2 class = "player">Player</h2>
+                
+                <div class = "centerGesture">
+                    <div id = "gestureByPlayer"></div>
+                </div>
+
+                <p class = "resultText">Result: <br> <label id = "playerResult">0</label></p>
+            </div>
+        </div>
+
+        <div class = "declaring-winner">
+            <h1 class = "winner-text">Winner of the game: <br> <label id = "winner"></label></h1>
+            <button id = "rematch"><i class="fa-solid fa-rotate-left fa-2x"></i></button>
+        </div>
+
+        <script src = "Rock Papper Scissors.js"></script>
+    </body>
+    
+</html>
